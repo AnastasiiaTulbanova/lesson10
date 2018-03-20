@@ -1,0 +1,27 @@
+.animationWrap {
+	display: none;
+}
+.flex-box{
+	width: 700px;
+	height: 400px;
+	margin: 100px auto;
+	background-color: red;
+	display: flex;
+	justify-content: space-around; /*flex-start center space-between space-around flex-end;*/
+	flex-direction: row; /*row row-reverse*/
+	align-items: center; /*flex-start, center, flex-end*/
+	flex-wrap: wrap;
+	align-content: center;
+}
+.flex-box .flex-item{
+	width: 50px;
+	height: 50px;
+	background-color: blue;
+	border: 1px black solid;
+	text-align: center;
+	line-height: 50px;
+	margin-right: 20px;
+}
+.flex-box .flex-item:nth-child(4){
+	margin-right: 0;
+}
