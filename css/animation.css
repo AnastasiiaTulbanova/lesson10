@@ -1,0 +1,62 @@
+div[class^='btn']{
+	display: none;
+}
+
+@keyframes anim{
+	from{
+		left: 0;
+		top: 0;
+	}
+	to{
+		left: 400px;
+		top: 400px;
+	}
+}
+
+.animationWrap{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+.animationWrap .block{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: absolute;
+	animation-name: anim;
+	animation-duration: 4s;
+	animation-iteration-count: infinite; 
+}
+@keyframes anim2{
+	0%{
+		left: 0;
+		top: 0;
+		background-color: red;
+	}
+	25%{
+		background-color: white;
+	}
+	50%{
+		left: 400px;
+		top: 400px;
+		background-color: blue;
+	}
+	100%{
+		left: 0px;
+		top: 0px;
+		background-color: green;
+	}
+}
+.animationWrap .block{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: absolute;
+	/*animation-name: anim;
+	animation-duration: 4s;
+	animation-iteration-count: 1; 
+	animation-delay: 2s;
+	animation-timing-function: linear; /*ease-in ease-out*/
+	/*animation-fill-mode: forwards; /*backwards, both*/
+	animation: anim2 10s infinite; /*name, duration, iteration-count, timing-function, delay */
+}
